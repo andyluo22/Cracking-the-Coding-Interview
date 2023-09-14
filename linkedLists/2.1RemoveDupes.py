@@ -31,6 +31,12 @@ def removeDupesRunnerTechnique(l1: LinkedList):
     while current:
         runner = current
         while runner.next:
-            if runner
-    
+            if runner.next.value == current.value:
+                runner.next = runner.next.next
+            else:
+                runner = runner.next
+        
+        current = current.next
+    l1.tail = runner
+    return l1
 
