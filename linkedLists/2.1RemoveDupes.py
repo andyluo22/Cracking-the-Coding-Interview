@@ -4,6 +4,8 @@
 
 from linkedLists import LinkedList
 
+# For singly linked lists, if we want to keep track of prev
+# Use prev = None variable 
 def removeDupes(l1: LinkedList):
     current = l1.head
     prev = None

@@ -72,42 +72,42 @@ class DoublyLinkedList(LinkedList):
             self.tail = self.tail.next
         return self
     
-def test_linked_list():
-    linked_list = LinkedList()
+# def test_linked_list():
+#     linked_list = LinkedList()
     
-    linked_list.add(1)
-    linked_list.add(2)
-    linked_list.add(3)
+#     linked_list.add(1)
+#     linked_list.add(2)
+#     linked_list.add(3)
     
-    print("Linked List:")
-    for node in linked_list:
-        print(node.value)
+#     print("Linked List:")
+#     for node in linked_list:
+#         print(node.value)
     
-    linked_list.add_to_beginning(0)
+#     linked_list.add_to_beginning(0)
     
-    print("Updated Linked List:")
-    for node in linked_list:
-        print(node.value)
+#     print("Updated Linked List:")
+#     for node in linked_list:
+#         print(node.value)
 
-test_linked_list()
+# test_linked_list()
 
-def test_doubly_linked_list():
-    doubly_linked_list = DoublyLinkedList()
+# def test_doubly_linked_list():
+#     doubly_linked_list = DoublyLinkedList()
     
-    doubly_linked_list.add(1)
-    doubly_linked_list.add(2)
-    doubly_linked_list.add(3)
+#     doubly_linked_list.add(1)
+#     doubly_linked_list.add(2)
+#     doubly_linked_list.add(3)
     
-    print("Doubly Linked List (forward):")
-    current = doubly_linked_list.head
-    while current:
-        print(current.value)
-        current = current.next
+#     print("Doubly Linked List (forward):")
+#     current = doubly_linked_list.head
+#     while current:
+#         print(current.value)
+#         current = current.next
     
-    print("Doubly Linked List (backward):")
-    current = doubly_linked_list.tail
-    while current:
-        print(current.value)
-        current = current.prev
+#     print("Doubly Linked List (backward):")
+#     current = doubly_linked_list.tail
+#     while current:
+#         print(current.value)
+#         current = current.prev
 
-test_doubly_linked_list()
+# test_doubly_linked_list()
